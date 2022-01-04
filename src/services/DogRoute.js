@@ -8,17 +8,3 @@ export async function fetchDogs() {
   const data = await resp.json();
   return data;
 }
-
-// import { client, checkError } from './client';
-
-// export async function getDogs() {
-//   let request = await client.from('dogs').select().order('id');
-
-//   return checkError(request);
-// }
-
-// export async function getDogById(id) {
-//   let request = await client.from('dogs').select('*').match({ id }).single();
-
-//   return request;
-// }

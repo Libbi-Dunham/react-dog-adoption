@@ -9,7 +9,6 @@ export default function DogList() {
     const fetchData = async () => {
       const dogData = await fetchDogs();
       setDogs(dogData);
-      console.log(dogData);
     };
     fetchData();
   }, []);
@@ -19,9 +18,14 @@ export default function DogList() {
       <h1>Dogs</h1>
       <ul>
         {dogs.map((dog) => (
-          <Link key={dog.id} to={`/dogs/${dog.id}`}>
-            <img src={dog.image}></img>
-          </Link>
+          <div key={dog.id}>
+            <Link key={dog.id} to={`/dogs/${dog.id}`}>
+              <img src={dog.image}></img>
+            </Link>
+            <h2>
+              {dog.name} is a {dog.age} year old {dog.breed}
+            </h2>
+          </div>
         ))}
       </ul>
     </>
