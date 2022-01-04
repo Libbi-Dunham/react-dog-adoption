@@ -16,7 +16,7 @@ function App() {
           <Route path="/dogs/:id">
             <DogDetail />
           </Route>
-          <Route path="/dogs">
+          <Route exact path="/">
             <DogList />
           </Route>
         </Switch>
