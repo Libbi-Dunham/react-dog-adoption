@@ -15,7 +15,7 @@ export default function DogList() {
 
   return (
     <>
-      <h1>Dogs</h1>
+      <h1>Say Hi to Each Dog!</h1>
       <ul>
         {dogs.map((dog) => (
           <div key={dog.id}>
