@@ -1,5 +1,23 @@
+body {
+  background-color: #ceb7b3;
+}
 .App {
   text-align: center;
+  font-family: 'RiseStarHandRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+
+img {
+  border-radius: 20%;
+  border: 2px solid black;
+  height: 400px;
+  width: 400px;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
 }
 
 .App-logo {
@@ -35,4 +53,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.loader {
+  position: relative;
+  display: inline-block;
+}
+.loader::before {
+  content: 'Loading';
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  letter-spacing: 2px;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: floating 1s ease-out infinite alternate;
 }
