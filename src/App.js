@@ -11,11 +11,6 @@ function App() {
       <BrowserRouter>
         <Header />
         <Admin />
-        {/* <header>
-          <NavLink to="/" data-testid="home">
-            Home
-          </NavLink>
-        </header> */}
         <Switch>
           <Route path="/dogs/:id">
             <DogDetail />
