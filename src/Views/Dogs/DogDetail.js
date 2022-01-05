@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import Dog from '../../Components/DogCard/Dogs';
 import { fetchDogs, getDogsById } from '../../services/DogRoute';
 
 export default function DogDetail() {
@@ -27,7 +26,6 @@ export default function DogDetail() {
     <>
       <ul>
         <li key={dogs.id} style={{ listStyleType: 'none' }}>
-          {/* <Dog dog={dogs} /> */}
           {dogs.map((dog) => (
             <div key={dog.id}>
               <img src={dog.image}></img>

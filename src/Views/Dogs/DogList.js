@@ -4,14 +4,17 @@ import { Link } from 'react-router-dom';
 
 export default function DogList() {
   const [dogs, setDogs] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
       const dogData = await fetchDogs();
+      setLoading(false);
       setDogs(dogData);
     };
     fetchData();
   }, []);
+  if (loading) return <h2> loading </h2>;
 
   return (
     <>
