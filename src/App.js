@@ -1,17 +1,21 @@
-import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import DogDetail from './Views/Dogs/DogDetail';
 import DogList from './Views/Dogs/DogList';
+import Header from './Components/Header/Header';
+import Admin from './Components/Admin/Admin';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <header>
+        <Header />
+        <Admin />
+        {/* <header>
           <NavLink to="/" data-testid="home">
             Home
           </NavLink>
-        </header>
+        </header> */}
         <Switch>
           <Route path="/dogs/:id">
             <DogDetail />
