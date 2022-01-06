@@ -19,3 +19,8 @@ export async function updateDog(id, name, bio, image, breed) {
   const response = await client.from('dogs').update({ name, bio, image, breed }).eq('id', id);
   return checkError(response);
 }
+
+export async function addDog(name, bio, image, age, breed) {
+  const response = await client.from('dogs').insert([{ name, bio, image, age, breed }]);
+  return checkError(response);
+}

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { useParams } from 'react-router';
 import Dog from '../../Components/DogCard/Dogs';
-import { fetchDogs, getDogsById } from '../../services/DogRoute';
+import { getDogsById } from '../../services/DogRoute';
 
 export default function DogDetail() {
   const { id } = useParams();
