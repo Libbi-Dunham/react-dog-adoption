@@ -14,7 +14,7 @@ function App() {
         <Header />
         <Admin />
         <Switch>
-          <Route path="/dogs/:id">
+          <Route exact path="/dogs/:id">
             <DogDetail />
           </Route>
           <Route exact path="/">

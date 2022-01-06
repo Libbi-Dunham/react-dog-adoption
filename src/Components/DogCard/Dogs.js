@@ -4,7 +4,7 @@ import React from 'react';
 export default function Dogs({ id, name, image, bio }) {
   return (
     <div className="dog">
-      <Link to={`/dogs/${id}`}></Link>
+      {/* <Link to={`/dogs/${id}`}></Link> */}
       <h2> {name} </h2>
       <img src={image}></img>
       <h2> {bio} </h2>
