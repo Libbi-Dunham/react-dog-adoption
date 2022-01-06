@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import DogForm from '../../Components/DogCard/DogForm';
-import { fetchDogById } from '../../services/DogRoute';
+import { getDogsById, updateDog } from '../../services/DogRoute';
 
 export default function DogEdit() {
   const [name, setName] = useState('');
@@ -13,7 +13,7 @@ export default function DogEdit() {
   const params = useParams();
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetchDogById(params.id);
+      const response = await getDogsById(params.id);
       setName(response.name);
       setBio(response.bio);
       setImage(response.image);
@@ -25,6 +25,7 @@ export default function DogEdit() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    await updateDog(params.id, name, bio, image, age, breed);
   };
 
   return (
