@@ -13,12 +13,12 @@ export default function CreateDog() {
 
   const handleSubmit = async (e) => {
     try {
+      e.preventDefault();
       await addDog(name, bio, image, age, breed);
       alert('You Have Successfully Added A dog!');
     } catch {
       alert('Oh No You Have No Success!');
     }
-    e.preventDefault();
     history.push('/');
   };
 

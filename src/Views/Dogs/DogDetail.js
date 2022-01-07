@@ -13,7 +13,7 @@ export default function DogDetail() {
   useEffect(() => {
     const fetchData = async () => {
       const dogData = await getDogsById(id);
-      setDog(dogData.data);
+      setDog(dogData);
       setLoading(false);
     };
     fetchData();
