@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import DogForm from '../../Components/DogCard/DogForm';
 import { getDogsById, updateDog } from '../../services/DogRoute';
+import { useHistory } from 'react-router-dom';
 
 export default function DogEdit() {
   const [name, setName] = useState('');
@@ -9,6 +10,7 @@ export default function DogEdit() {
   const [image, setImage] = useState('');
   const [age, setAge] = useState('');
   const [breed, setBreed] = useState('');
+  const history = useHistory();
 
   const params = useParams();
   useEffect(() => {
@@ -31,6 +33,7 @@ export default function DogEdit() {
     }
     e.preventDefault();
     await updateDog(params.id, name, bio, image, age, breed);
+    history.push('/');
   };
 
   return (

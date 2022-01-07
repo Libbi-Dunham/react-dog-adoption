@@ -1,18 +1,7 @@
 import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
 import { addDog } from '../../services/DogRoute';
-
-// export default function Admin() {
-//   return (
-//     <div>
-//       <Link to="/admin">Admin</Link>
-//     </div>
-//   );
-// }
-// import React, { useState, useEffect } from 'react';
-// import { useParams } from 'react-router-dom';
 import DogForm from '../../Components/DogCard/DogForm';
-// import { getDogsById, updateDog } from '../../services/DogRoute';
+import { useHistory } from 'react-router-dom';
 
 export default function CreateDog() {
   const [name, setName] = useState('');
@@ -20,19 +9,7 @@ export default function CreateDog() {
   const [image, setImage] = useState('');
   const [age, setAge] = useState('');
   const [breed, setBreed] = useState('');
-
-  // const params = useParams();
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const response = await getDogsById(params.id);
-  //     setName(response.name);
-  //     setBio(response.bio);
-  //     setImage(response.image);
-  //     setAge(response.age);
-  //     setBreed(response.breed);
-  //   };
-  //   fetchData();
-  // }, [params.id]);
+  const history = useHistory();
 
   const handleSubmit = async (e) => {
     try {
@@ -42,6 +19,7 @@ export default function CreateDog() {
     }
     e.preventDefault();
     await addDog(name, bio, image, age, breed);
+    history.push('/');
   };
 
   return (
