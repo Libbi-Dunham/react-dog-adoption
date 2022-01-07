@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 // import { Link } from 'react-router-dom';
 import { useParams } from 'react-router';
+import { useHistory } from 'react-router-dom';
 import Dog from '../../Components/DogCard/Dogs';
 import { getDogsById, deleteDog } from '../../services/DogRoute';
 
@@ -8,6 +9,7 @@ export default function DogDetail() {
   const { id } = useParams();
   const [dog, setDog] = useState([]);
   const [loading, setLoading] = useState(true);
+  const history = useHistory();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,9 +21,11 @@ export default function DogDetail() {
   }, [id]);
 
   if (loading) return <h2> loading </h2>;
+
   const handleDelete = async (e) => {
     e.preventDefault();
     await deleteDog(id);
+    history.push('/');
   };
 
   return (
