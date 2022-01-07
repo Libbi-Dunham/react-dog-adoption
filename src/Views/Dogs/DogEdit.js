@@ -24,6 +24,11 @@ export default function DogEdit() {
   }, [params.id]);
 
   const handleSubmit = async (e) => {
+    try {
+      alert('You Have Successfully updated A dog!');
+    } catch {
+      alert('Oh No You Have No Success!');
+    }
     e.preventDefault();
     await updateDog(params.id, name, bio, image, age, breed);
   };
