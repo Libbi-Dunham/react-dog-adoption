@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the dog details 1`] = `
+<div>
+  <ul>
+    <li
+      style="list-style-type: none;"
+    >
+      <div
+        class="dog"
+      >
+        <h2>
+           
+          Miklo
+           
+        </h2>
+        <img
+          src="https://placedog.net/1000/563?id=90"
+        />
+        <h2>
+           
+          Goofy and fun guy
+           
+        </h2>
+        <a
+          href="/dogs/1/DogEdit"
+        >
+          Edit
+        </a>
+      </div>
+      <div>
+        <button>
+          delete
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
