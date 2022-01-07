@@ -23,12 +23,12 @@ export default function DogDetail() {
 
   const handleDelete = async (e) => {
     try {
+      await deleteDog(id);
       alert('You Have Successfully Deleted A dog!');
     } catch {
       alert('Oh No You Have No Success!');
     }
     e.preventDefault();
-    await deleteDog(id);
     history.push('/');
   };
 

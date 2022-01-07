@@ -8,6 +8,14 @@ body {
   font-style: normal;
 }
 
+.div {
+  border-radius: 50%;
+}
+
+.action {
+  border-radius: 100%;
+}
+
 img {
   border-radius: 20%;
   border: 2px solid black;

@@ -28,7 +28,7 @@ export default function DogForm({
             }}
           />
         </div>
-        <div classsName="for-control">
+        <div classsName="form-control">
           <label>Bio: </label>
           <textarea
             placeholder="bio"
