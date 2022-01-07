@@ -12,7 +12,7 @@ export async function fetchDogs() {
 
 export async function getDogsById(id) {
   let request = await client.from('dogs').select().match({ id }).single();
-  return request;
+  return checkError(request);
 }
 
 export async function updateDog(id, name, bio, image, breed) {
