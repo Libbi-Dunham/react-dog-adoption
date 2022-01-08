@@ -8,11 +8,45 @@ body {
   font-style: normal;
 }
 
+.control {
+  border-radius: 8px;
+}
+
+/* .dog-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+} */
+
+.save {
+  border-radius: 10px;
+}
+
+.save:hover {
+  background-color: #ceb7b3;
+}
+.delete {
+  border-radius: 10px;
+}
+
+.delete:hover {
+  background-color: #ceb7b3;
+}
+
+.div {
+  border-radius: 50%;
+}
+
+.action {
+  border-radius: 100%;
+}
+
 img {
   border-radius: 20%;
-  border: 2px solid black;
-  height: 400px;
-  width: 400px;
+  border: 20px solid black;
+  height: 300px;
+  width: 300px;
 }
 
 a:hover {

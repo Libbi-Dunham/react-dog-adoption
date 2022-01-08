@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders dog information 1`] = `
+<div>
+  <div>
+    <h1>
+      Edit
+    </h1>
+    <div
+      class="dog-form"
+    >
+      <form>
+        <h3>
+          Enter A New Dog
+        </h3>
+        <div
+          class="form-control"
+        >
+          <label>
+            Name: 
+          </label>
+          <input
+            class="control"
+            placeholder="Name"
+            type="text"
+            value="Luna"
+          />
+        </div>
+        <div
+          classsname="form-control"
+        >
+          <label>
+            Bio: 
+          </label>
+          <textarea
+            class="control"
+            placeholder="bio"
+            type="text"
+          >
+            High energy toy loving girl
+          </textarea>
+        </div>
+        <div
+          class="form-control"
+        >
+          <label>
+            Age: 
+          </label>
+          <input
+            class="control"
+            placeholder="number"
+            type="text"
+            value="4"
+          />
+        </div>
+        <div
+          class="form-control"
+        >
+          <label>
+            Image: 
+          </label>
+          <input
+            class="control"
+            placeholder="Image URL"
+            type="text"
+            value="https://placedog.net/samples/63.jpg"
+          />
+        </div>
+        <div
+          class="form-control"
+        >
+          <label>
+            Breed: 
+          </label>
+          <input
+            class="control"
+            placeholder="breed"
+            type="text"
+            value="Golden retriever"
+          />
+        </div>
+        <br />
+        <br />
+        <div
+          class="action"
+        >
+          <button
+            class="save"
+          >
+            Save
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;

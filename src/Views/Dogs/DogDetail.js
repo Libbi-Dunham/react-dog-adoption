@@ -13,22 +13,22 @@ export default function DogDetail() {
   useEffect(() => {
     const fetchData = async () => {
       const dogData = await getDogsById(id);
-      setDog(dogData.data);
+      setDog(dogData);
       setLoading(false);
     };
     fetchData();
   }, [id]);
 
-  if (loading) return <h2> loading </h2>;
+  if (loading) return <h2> Here They Come Running! </h2>;
 
   const handleDelete = async (e) => {
     try {
+      await deleteDog(id);
       alert('You Have Successfully Deleted A dog!');
     } catch {
       alert('Oh No You Have No Success!');
     }
     e.preventDefault();
-    await deleteDog(id);
     history.push('/');
   };
 

@@ -14,23 +14,25 @@ export default function DogList() {
     };
     fetchData();
   }, []);
-  if (loading) return <h2> loading </h2>;
+  if (loading) return <h2> Loading Your New Friends </h2>;
 
   return (
     <>
       <h1>Say Hi to Each Dog!</h1>
-      <ul>
-        {dogs.map((dog) => (
-          <div key={dog.id}>
-            <Link key={dog.id} to={`/dogs/${dog.id}`}>
-              <img src={dog.image}></img>
-            </Link>
-            <h2>
-              {dog.name} is a {dog.age} year old {dog.breed}
-            </h2>
-          </div>
-        ))}
-      </ul>
+      <div className="dog-list">
+        <ul>
+          {dogs.map((dog) => (
+            <div key={dog.id}>
+              <Link key={dog.id} to={`/dogs/${dog.id}`}>
+                <img src={dog.image}></img>
+              </Link>
+              <h2>
+                {dog.name} is a {dog.age} year old {dog.breed}
+              </h2>
+            </div>
+          ))}
+        </ul>
+      </div>
     </>
   );
 }
