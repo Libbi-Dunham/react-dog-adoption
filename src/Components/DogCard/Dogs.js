@@ -11,7 +11,9 @@ export default function Dogs({ id, name, image, bio, handleDelete }) {
         <Link to={`/dogs/${id}/DogEdit`}>Edit</Link>
       </div>
       <div>
-        <button onClick={handleDelete}>delete</button>
+        <button className="delete" onClick={handleDelete}>
+          delete
+        </button>
       </div>
     </>
   );

@@ -19,7 +19,7 @@ export default function DogDetail() {
     fetchData();
   }, [id]);
 
-  if (loading) return <h2> loading </h2>;
+  if (loading) return <h2> Here They Come Running! </h2>;
 
   const handleDelete = async (e) => {
     try {
