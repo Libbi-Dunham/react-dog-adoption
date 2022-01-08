@@ -29,7 +29,9 @@ exports[`renders the dog details 1`] = `
         </a>
       </div>
       <div>
-        <button>
+        <button
+          class="delete"
+        >
           delete
         </button>
       </div>

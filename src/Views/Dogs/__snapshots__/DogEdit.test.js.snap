@@ -10,9 +10,9 @@ exports[`renders dog information 1`] = `
       class="dog-form"
     >
       <form>
-        <h2>
-          Enter Dog Details
-        </h2>
+        <h3>
+          Enter A New Dog
+        </h3>
         <div
           class="form-control"
         >
@@ -20,6 +20,7 @@ exports[`renders dog information 1`] = `
             Name: 
           </label>
           <input
+            class="control"
             placeholder="Name"
             type="text"
             value="Luna"
@@ -32,7 +33,9 @@ exports[`renders dog information 1`] = `
             Bio: 
           </label>
           <textarea
+            class="control"
             placeholder="bio"
+            type="text"
           >
             High energy toy loving girl
           </textarea>
@@ -44,6 +47,7 @@ exports[`renders dog information 1`] = `
             Age: 
           </label>
           <input
+            class="control"
             placeholder="number"
             type="text"
             value="4"
@@ -56,6 +60,7 @@ exports[`renders dog information 1`] = `
             Image: 
           </label>
           <input
+            class="control"
             placeholder="Image URL"
             type="text"
             value="https://placedog.net/samples/63.jpg"
@@ -68,15 +73,20 @@ exports[`renders dog information 1`] = `
             Breed: 
           </label>
           <input
+            class="control"
             placeholder="breed"
             type="text"
             value="Golden retriever"
           />
         </div>
+        <br />
+        <br />
         <div
           class="action"
         >
-          <button>
+          <button
+            class="save"
+          >
             Save
           </button>
         </div>

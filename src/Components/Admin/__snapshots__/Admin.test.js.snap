@@ -13,9 +13,9 @@ Object {
           class="dog-form"
         >
           <form>
-            <h2>
-              Enter Dog Details
-            </h2>
+            <h3>
+              Enter A New Dog
+            </h3>
             <div
               class="form-control"
             >
@@ -23,6 +23,7 @@ Object {
                 Name: 
               </label>
               <input
+                class="control"
                 placeholder="Name"
                 type="text"
                 value=""
@@ -35,7 +36,9 @@ Object {
                 Bio: 
               </label>
               <textarea
+                class="control"
                 placeholder="bio"
+                type="text"
               />
             </div>
             <div
@@ -45,6 +48,7 @@ Object {
                 Age: 
               </label>
               <input
+                class="control"
                 placeholder="number"
                 type="text"
                 value=""
@@ -57,6 +61,7 @@ Object {
                 Image: 
               </label>
               <input
+                class="control"
                 placeholder="Image URL"
                 type="text"
                 value=""
@@ -69,15 +74,20 @@ Object {
                 Breed: 
               </label>
               <input
+                class="control"
                 placeholder="breed"
                 type="text"
                 value=""
               />
             </div>
+            <br />
+            <br />
             <div
               class="action"
             >
-              <button>
+              <button
+                class="save"
+              >
                 Save
               </button>
             </div>
@@ -95,9 +105,9 @@ Object {
         class="dog-form"
       >
         <form>
-          <h2>
-            Enter Dog Details
-          </h2>
+          <h3>
+            Enter A New Dog
+          </h3>
           <div
             class="form-control"
           >
@@ -105,6 +115,7 @@ Object {
               Name: 
             </label>
             <input
+              class="control"
               placeholder="Name"
               type="text"
               value=""
@@ -117,7 +128,9 @@ Object {
               Bio: 
             </label>
             <textarea
+              class="control"
               placeholder="bio"
+              type="text"
             />
           </div>
           <div
@@ -127,6 +140,7 @@ Object {
               Age: 
             </label>
             <input
+              class="control"
               placeholder="number"
               type="text"
               value=""
@@ -139,6 +153,7 @@ Object {
               Image: 
             </label>
             <input
+              class="control"
               placeholder="Image URL"
               type="text"
               value=""
@@ -151,15 +166,20 @@ Object {
               Breed: 
             </label>
             <input
+              class="control"
               placeholder="breed"
               type="text"
               value=""
             />
           </div>
+          <br />
+          <br />
           <div
             class="action"
           >
-            <button>
+            <button
+              class="save"
+            >
               Save
             </button>
           </div>

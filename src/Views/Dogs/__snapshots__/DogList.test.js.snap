@@ -6,13 +6,13 @@ Object {
   "baseElement": <body>
     <div>
       <h2>
-         loading 
+         Loading Your New Friends 
       </h2>
     </div>
   </body>,
   "container": <div>
     <h2>
-       loading 
+       Loading Your New Friends 
     </h2>
   </div>,
   "debug": [Function],
